@@ -1,0 +1,17 @@
+language: java
+env:
+  matrix:
+  - JDK=8
+dist: trusty
+matrix:
+  allow_failures:
+  - env: JDK=8-ea
+deploy:
+  provider: heroku
+  api_key:
+    secure: 
+  app: 
+  on:
+    repo: mrkansa/hello
+
+
