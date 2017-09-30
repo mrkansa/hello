@@ -9,9 +9,7 @@ matrix:
 deploy:
   provider: heroku
   api_key:
-    secure: 
-  app: 
+    secure: hbZhJnj50Frz8/YjVG3jQv22+X4hR0WBo6VWtJcKNkWIjYg/ZqWvhEmnUHcYM5+mHxTGLhogZk9t+rqI43toIu5y7U5aYzLkILkbrIsZ78Yqu6eEuX7//g6qfsxIzqdP+mC0jo4cSpXUW+6u7qVoY0HmFyueHjlQrgVxuWgLod8AyC0UWhhr1v2dq7Hu0f6FrhPQjnUhdcP3mlr6acs3wgTizyDtcQby+STA3igQdoI+EMvsRsx25YjiR+9ifTNS+8WZ+Ej95G3Km1thHMCYVGB5P0H31AtyOSF0kzmOzEaVtkckMsRboBIumbcp7o7ZiDkKMPGGW/gEWcrb9BWeo8ngyncGPVINe4M2+Fz5i+kWHfmmLlu2Gt1cyVPXPE3hzksO5oqj1kMpkQGLqFYy9Esr2F44z6Muw2Wpn4iwmoSCJwPEoU5lmPh5P1hpmv8Wf060XqdNhgJ/hXB2/0nC0FTduzxnS916mZIpWBrKYnWx7ECsQrQ5dC1D+FhGfVwrxsnaKcF7JWyYQYjRxIFr1+8NXXz1VedbzZPXF1BPJ3raGYoWJ9bQ5V9M6BIR09xYdn7xTzmYusDJFiDTPcmN81ysT69clhsatuZqfSrW3ea/80hb93rMMZ0PMD8vvlOmCs2sbLkedWc9/gOCpWabnRUXPkiv7jvt1NFhTQguYKQ=
+  app: hello
   on:
     repo: mrkansa/hello
-
-
