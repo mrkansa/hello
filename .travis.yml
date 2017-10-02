@@ -1,15 +1,13 @@
-language: java
-env:
-  matrix:
-  - JDK=8
+language: php
+php:
+  - '5.6'
+  - '7.1'
+  - hhvm-3.18
 dist: trusty
-matrix:
-  allow_failures:
-  - env: JDK=8-ea
 deploy:
   provider: heroku
   api_key:
-    secure: M1nrGOymBv77FthDQymdLCyFKvcS8kfOGZ0pTkQZPg0a+Fu6EMqZolrU9UqwL6Q78X+qARKqXV0H5WFjxwQaldY3DIpaoPAwAfbcGrwtT4dW0ZjnG605nRhSeVVawbHpcXLsoz3ncM67SeWDMybTAzY0y/qY6xpSpaWoQ712rLHOSs8dw/WEcIBNTpGtq+AHWojR+288QguTvr7Vu4lH7wptd+tEjjc1mmnE/SEXN+74UiE+Bsp9xYSyR1YDOMdW4hr7ye7RXKy2wFQRR9VRoDeibOiG6cLGnG+wFF5INjiNNO/KkWrIcjrEZxN+nrdQd/AscbJC2i4hDZMNTBeOiGKeDfK2SpeIQ38B/QwiXGVgxgFKYV6Nnmp2bvZwLbmU3BxnaRwdT+WDFwLLJnn+SWpG8GhVpmEE2PVkhu2RAo0HJgGNG69Ap/9jCkJ2mLtC0ik/mp/7UsLcRDNieQWJnO6k+ra6h7kLV4lLX3XGdVCY1hmYTRe+B59uIdo2sFcDuZY1eMTlJxZY83tMsiqCCedNM7+9dgFtnecYh3EOsi3+KneMjnZgGUzatqX9BslQ88zAKcK9urSa9fpzo+jbYkYSnvLCoXUjHQlPtF7rmPwII6Pyct4cBeUjK9ZlP8ILNjFy05ABU5VBv6ROVfAfAtfxtf21Ux+iRCXwNLvlsxI=
-  app: hello
+    secure: KUGle+3X5FX+mgiaLZB4Q6R4EwMWzmVc4P/aUb6GbxbxBOL29148CFZ3wClV9WfxlmVXR4pgMtiV/smgJFmmBRWobihFSC5O+hq/Mn1PMx4ru4NbpyGMBKmyWwG3XtG0KhznEcMJCRzuR3swSHHoR4WrHzp/cFycXpEz1qphTZ2kbVg/NKhK12RsPb7J+oM6OErOy0kaUxIE7p+vPEcnjLjWehYApkxwiOsRrmCZsS1Vs5K7eC2gKl7q3Z0Ez93IEvSODgbCV36BDtZCHrfBg7mFW+6UIdXCw/GVYLnxNA7OeN+vrZxFk375d9ybI3/hKY9TGkUNUJFF3TqZebJmsLTnKx36DDE61uDm6QsqgggTfleNQIkhsCn3sbE+GYnh3ObxN/5rYVMwNt7Q321OStG8ezZ7yjDeZUH5i47ej7xoCX/HfriqU3zXx3ZCSEyqClh3vDYTs6e5+a9fhVtc+kQvR/b6JfgkBmKomQqqP237E81CfyWIOVE1HpfiCG8zdfeLJs/bfU16dVbCQNVeS2tZBglOvINHyXsiEsotTAIhEARCOOoWL2rjHmsx4bZLpoSvJjmSOZxfOo0QAPVw948m8+Bfb3mSHZsG2PV9piz9qVqdRL2NCnhKdRWmlThlYII8GJ/G6qbbjuVyrfKFXpUWrd3ZcmBfwft+Ze3OznU=
+  app: guarded-ravine-32588
   on:
     repo: mrkansa/hello
